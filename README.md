@@ -3,7 +3,7 @@
 ## *Nikita Lytvyn*
 
 **Students Performance Analysis App** Analyzes the progress of students using the arithmetic mean of the grades
-Time spent: **48** hours spent in total
+*Time spent: **48** hours spent in total
 
 ## Functionality 
 
