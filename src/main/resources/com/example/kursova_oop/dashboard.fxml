@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="1073.0" style="-fx-background-color: #243E54;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursova_oop.DashboardController">
+    <children>
+        <AnchorPane layoutX="-12.0" layoutY="60.0" prefHeight="574.0" prefWidth="1085.0" style="-fx-background-color: #243E54;">
+         <children>
+            <TextField fx:id="singup_firstname" layoutX="788.0" layoutY="123.0" prefHeight="34.0" prefWidth="257.0" promptText="Ім'я" />
+            <TextField fx:id="signup_lastname" layoutX="788.0" layoutY="80.0" prefHeight="34.0" prefWidth="257.0" promptText="Прізвище" />
+            <Button fx:id="signup_save" layoutX="618.0" layoutY="408.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="134.0" style="-fx-background-color: #356A73;" text="Зберегти" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="signup_delete" layoutX="921.0" layoutY="408.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="134.0" style="-fx-background-color: #356A73;" text="Видалити" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Label layoutX="752.0" layoutY="183.0" text="Оцінки:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="707.0" layoutY="229.0" text="Комп математика:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="signup_oop" layoutX="884.0" layoutY="347.0" prefHeight="27.0" prefWidth="92.0" />
+            <Label layoutX="771.0" layoutY="348.0" prefHeight="26.0" prefWidth="75.0" text="ООП:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="signup_compmath" layoutX="884.0" layoutY="229.0" prefHeight="27.0" prefWidth="64.0" />
+            <Label layoutX="712.0" layoutY="270.0" text="Англійська мова:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="signup_cyberwars" layoutX="884.0" layoutY="308.0" prefHeight="27.0" prefWidth="64.0" />
+            <Label layoutX="717.0" layoutY="309.0" prefHeight="26.0" prefWidth="134.0" text="Теорія кібервійн:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="signup_english" layoutX="884.0" layoutY="269.0" prefHeight="27.0" prefWidth="64.0" />
+            <Button fx:id="signup_analysis" layoutX="717.0" layoutY="477.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="249.0" style="-fx-background-color: #356A73;" text="Зведений аналіз" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+             <TextField fx:id="signup_group" layoutX="789.0" layoutY="38.0" prefHeight="34.0" prefWidth="134.0" promptText="Група" />
+             <TableView fx:id="signup_table" layoutX="12.0" layoutY="3.0" onMouseClicked="#handleMouseAction" prefHeight="574.0" prefWidth="567.0">
+              <columns>
+                  <TableColumn fx:id="id_column" prefWidth="42.0" text="id" />
+                <TableColumn fx:id="group_column" prefWidth="63.0" text="Група" />
+                <TableColumn fx:id="lastname_column" prefWidth="125.0" text="Прізвище" />
+                  <TableColumn fx:id="firstname_column" minWidth="0.0" prefWidth="91.0" text="Ім'я" />
+                  <TableColumn fx:id="compmath_column" prefWidth="67.0" text="1" />
+                  <TableColumn fx:id="english_column" prefWidth="60.0" text="2" />
+                  <TableColumn fx:id="cyberwars_column" prefWidth="60.0" text="3" />
+                  <TableColumn fx:id="oop_column" prefWidth="60.0" text="4" />
+              </columns>
+            </TableView>
+            <Label layoutX="676.0" layoutY="40.0" text="Група:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="661.0" layoutY="82.0" text="Прізвище:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="707.0" layoutY="125.0" text="Ім'я:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="605.0" layoutY="-1.0" text="Зареєструвати студента:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="948.0" layoutY="41.0" text="ID:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="signup_id" layoutX="988.0" layoutY="43.0" prefHeight="25.0" prefWidth="56.0" />
+            <Button fx:id="signup_update" layoutX="771.0" layoutY="408.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="134.0" style="-fx-background-color: #356A73;" text="Оновити" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <Label layoutX="135.0" layoutY="11.0" text="Список студентів:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="signup_back" layoutX="805.0" layoutY="13.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="228.0" style="-fx-background-color: #356A73;" text="Вийти" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
