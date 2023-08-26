@@ -18,12 +18,11 @@ The following **required** functionality is completed:
 
 The following **extensions** are implemented:
 
-* [x] Custom colors palette selected
+* [x] Custom color palette selected
 * [x] Added a range between excellent and satisfactory grades
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
 
 <img src='https://media.giphy.com/media/vSn6kQl4ZqEtPgAAyN/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
@@ -35,7 +34,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [2023] [Nikita Lytvyn]
+    Copyright 2023 Nikita Lytvyn
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
